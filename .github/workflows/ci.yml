@@ -1,7 +1,6 @@
 name: run Action - Build & Deploy
 on:
-  watch:
-    types: started
+  workflow_dispatch:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
