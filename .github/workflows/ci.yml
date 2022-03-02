@@ -1,6 +1,14 @@
 name: GitHub Actions Build and Deploy Demo
+#手动触发
+#on:
+  #workflow_dispatch:  
+
+#push触发   
 on:
-  workflow_dispatch: #手动触发
+  push:
+    branches:
+      - master
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
