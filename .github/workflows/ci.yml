@@ -1,8 +1,7 @@
 name: run Action - Build & Deploy
 on:
-  push:
-    branches:
-      - master
+  watch:
+    types: started
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
